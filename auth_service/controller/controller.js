@@ -1,7 +1,7 @@
 const bcrypt= require('bcryptjs');
 const { response } = require('express');
 const jwt = require('jsonwebtoken');
-const path = require('path');
+const path = require('path'); 
 require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 const SECRET_KEY = process.env.SECRET_KEY;
 console.log(SECRET_KEY,'d')
